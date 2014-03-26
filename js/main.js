@@ -72,9 +72,9 @@ $(document).ready(function() {
         //alert(Calculate.addTwoNums(num1, num2));
     });
 
-    $("#clearbutton").click(function() {
-        $("#imperialinput").val('');
-        $("#metricinput").val('');
+    $("#clear").click(function() {
+        $("#number1").val('');
+        $("#number2").val('');
     });
 
 });
