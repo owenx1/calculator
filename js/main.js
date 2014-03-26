@@ -22,7 +22,54 @@ $(document).ready(function() {
         }
 
             //$("#imperialinput").val(Converter.convertFromPoundsToKIlo(metricValue));
-        alert(Calculate.addTwoNums(num1, num2));
+        document.getElementById("answer").innerHTML = (Calculate.addTwoNums(num1, num2));
+        //$("answer").innerHTML = (Calculate.addTwoNums(num1, num2));
+        //alert(Calculate.addTwoNums(num1, num2));
+    });
+
+    $("#minusButton").click(function() {
+        var num1 = $("#number1").val();
+        var num2 = $("#number2").val();
+
+
+        if (((num1.length == 0) || (num2.length ==0))){
+            alert("Please enter numbers in both boxes")
+        }
+
+        //$("#imperialinput").val(Converter.convertFromPoundsToKIlo(metricValue));
+        document.getElementById("answer").innerHTML = (Calculate.subtractTwoNums(num1, num2));
+        //$("answer").innerHTML = (Calculate.addTwoNums(num1, num2));
+        //alert(Calculate.addTwoNums(num1, num2));
+    });
+
+    $("#multButton").click(function() {
+        var num1 = $("#number1").val();
+        var num2 = $("#number2").val();
+
+
+        if (((num1.length == 0) || (num2.length ==0))){
+            alert("Please enter numbers in both boxes")
+        }
+
+        //$("#imperialinput").val(Converter.convertFromPoundsToKIlo(metricValue));
+        document.getElementById("answer").innerHTML = (Calculate.multiplyTwoNums(num1, num2));
+        //$("answer").innerHTML = (Calculate.addTwoNums(num1, num2));
+        //alert(Calculate.addTwoNums(num1, num2));
+    });
+
+    $("#divideButton").click(function() {
+        var num1 = $("#number1").val();
+        var num2 = $("#number2").val();
+
+
+        if (((num1.length == 0) || (num2.length ==0))){
+            alert("Please enter numbers in both boxes")
+        }
+
+        //$("#imperialinput").val(Converter.convertFromPoundsToKIlo(metricValue));
+        document.getElementById("answer").innerHTML = (Calculate.divideTwoNums(num1, num2));
+        //$("answer").innerHTML = (Calculate.addTwoNums(num1, num2));
+        //alert(Calculate.addTwoNums(num1, num2));
     });
 
     $("#clearbutton").click(function() {
