@@ -11,4 +11,23 @@ window._skel_config = {
     }
 };
 
+$(document).ready(function() {
+    $("#addButton").click(function() {
+        var num1 = $("#number1").val();
+        var num2 = $("#number2").val();
 
+
+        if (((num1.length == 0) || (num2.length ==0))){
+            alert("Please enter numbers in both boxes")
+        }
+
+            //$("#imperialinput").val(Converter.convertFromPoundsToKIlo(metricValue));
+        alert(Calculate.addTwoNums(num1, num2));
+    });
+
+    $("#clearbutton").click(function() {
+        $("#imperialinput").val('');
+        $("#metricinput").val('');
+    });
+
+});
